@@ -6,23 +6,70 @@
 body{
   background: url(./assets/bgimage.png) no-repeat center center;
   height: 100vh;
-  display: flex;
-  justify-content: flex-end;
+
 }
 
 nav{
   display: flex;
   justify-content: flex-end;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-button {
-  background-color: #000;
+main {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  width: 52rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 99.9vh;
+}
+
+.image-container{
+  flex: 1;
+  background-color: #33097F;
+}
+
+.form-container{
+  flex: 1;
+  background-color: #B7A5F4;
+  display: grid;
+  place-content: center;
+}
+
+.form-heading{
+  text-align: center;
+    font-weight: bold;
+  color: #3B0799;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.form-subheading{
+  text-align: center;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1.5px solid #3B0799;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 30px;
+  outline: none !important;
+  padding-bottom: 15px;
+  padding-left: 50px;
   width: 100%;
-  opacity: 0.9;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-spacing, 1.5rem);
+}
+
+.flow-space--large{
+  --flow-spacing: 2rem;
 }
