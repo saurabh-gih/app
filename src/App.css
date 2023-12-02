@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(./assets/bgimage.png) no-repeat center center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
